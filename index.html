@@ -6,7 +6,9 @@
     <title>a2x-redactor-js-plugin by a2xchip</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/pyment_trac.css">
+    <link rel="stylesheet" href="stylesheets/redactor.css">
+    <link rel="stylesheet" href="stylesheets/a2x.redactor.plugin.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,7 +18,7 @@
     <div class="wrapper">
       <header>
         <h1>a2x-redactor-js-plugin</h1>
-        <p>The plugin for popular html5 wysiwyg redactor editor v8.2.2</p>
+        <p>The plugin is for popular html5 wysiwyg redactor editor v8.2.2</p>
 
         <p class="view"><a href="https://github.com/a2xchip/a2x-redactor-js-plugin">View the Project on GitHub <small>a2xchip/a2x-redactor-js-plugin</small></a></p>
 
@@ -35,6 +37,9 @@
 <a name="about" class="anchor" href="#about"><span class="octicon octicon-link"></span></a>About</h2>
 
 <p>This is the plugin for popular html5 wysiwig editor redactor v8.2.2. And adds some additional features to the editor. </p>
+<p>
+  <iframe width="560" height="315" src="//www.youtube.com/embed/kwhQ1gdn-a0" frameborder="0" allowfullscreen></iframe>
+</p>
 
 <h2>
 <a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
@@ -74,13 +79,38 @@
     <span class="p">});</span>
   <span class="p">});</span>
 </pre></div>
+
+        <h2><a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo (try insert quote button)</h2>
+        <textarea id="test-id">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </textarea>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/a2xchip">a2xchip</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
+    <style type="text/css">
+      .redactor_editor blockquote footer {
+          float: none;
+          position: relative !important;
+          width: auto;
+          bottom: auto;
+        }
+      }
+    </style>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="javascripts/scale.fix.js"></script>
-    
+    <script src="javascripts/a2x.redactor.plugin.js"></script>
+    <script src="javascripts/redactor.js"></script>
+    <script type="text/javascript">
+      $(document).ready(
+        function() {
+        $('#test-id').redactor({
+          buttons: ['formatting', '|', 'bold', 'italic', 'fullscreen', '|'],
+          plugins: ['a2x']
+        });
+      });
+    </script>
   </body>
 </html>
