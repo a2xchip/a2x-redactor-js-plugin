@@ -1,0 +1,9 @@
+.redactor_toolbar li a.redactor_btn_a2xquote {
+  display: block;
+  text-indent: -9999px;
+  background-image: url(../img/a2x-redactor-plugin.png);
+  background-repeat: no-repeat;
+  background-position: 0;
+  width: 25px;
+  height: 25px;
+}

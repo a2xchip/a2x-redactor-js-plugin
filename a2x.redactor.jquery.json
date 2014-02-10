@@ -1,0 +1,27 @@
+{
+  "name": "a2x.redactor",
+  "title": "a2x redactor plugin",
+  "description": "jQuery plugin for popular wysiwig html5 editor REDACTOR based on jQuery",
+  "keywords": [
+    "redactor",
+    "editor",
+    "wysiwig",
+    "buttons"
+  ],
+  "version": "0.1.0",
+  "author": {
+    "name": "a2xchip",
+    "url": "https://twitter.com/a2xchip"
+  },
+  "licenses": [
+    {
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "homepage": "http://a2xchip.github.io/a2x-redactor-js-plugin/",
+  "dependencies": {
+    "jquery": ">=1.10.2",
+    "redactor-js": "8.2.2"
+  }
+}
