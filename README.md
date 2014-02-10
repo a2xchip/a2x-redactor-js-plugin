@@ -4,6 +4,11 @@
 
 This is the plugin for popular html5 wysiwig editor redactor v8.2.2. And adds some additional features to the editor. 
 
+## Features
+
+* Adds quote button to insert `blockquote` with `footer`;
+* ...comming soon
+
 ## Usage 
 
 You will need to clone jquery and redactor-js repository and include it as a dependency into your page. 
@@ -40,3 +45,4 @@ You will need to clone jquery and redactor-js repository and include it as a dep
 
 ## See working demo on projects page
 
+[http://a2xchip.github.io/a2x-redactor-js-plugin/]
